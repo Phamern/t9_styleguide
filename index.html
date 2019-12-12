@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Style guide</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/hct4vcx.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="img/taake_logo.png" class="logo" />
+      <ul>
+        <li><a href="#article1">Introduksjon</a></li>
+        <li><a href="#article2">Visjon og verdier</a></li>
+        <li><a href="#article3">Design oppsett</a></li>
+        <ul class="sublist">
+          <li><a href="#layout">Layout</a></li>
+          <li><a href="#breakpoints">Breakpoints</a></li>
+          <li><a href="#navigation">Navigasjon</a></li>
+          <li><a href="#reglement">Innholdsreglement</a></li>
+        </ul>
+        <li><a href="#article4">Design elementer</a></li>
+        <ul class="sublist">
+          <li><a href="#logo">Logo</a></li>
+          <li><a href="#colors">Farger</a></li>
+          <li><a href="#typography">Typografi</a></li>
+          <li><a href="#images">Bilder</a></li>
+        </ul>
+        <li><a href="#article5">Kodestil konvensjoner</a></li>
+        <li><a href="#article6">Feedback/Kontakt</a></li>
+      </ul>
+    </nav>
+    <main>
+      <header>
+        <h1>Style Guide</h1>
+        <p>
+          Denne style guiden har sin hensikt å gi retningslinjer til konsept,
+          verdier og utforming av <i>Tåke Magazine</i>.
+        </p>
+      </header>
+      <article id="article1">
+        <h2>Introduksjon - <i>Tåke Magazine</i></h2>
+        <section id="section1">
+          <h3>Konsept</h3>
+          <p>
+            <i>Tåke Magazine</i> er et kunstnerisk psykisk helse magasin som
+            skal presentere ulike psykiske lidelser gjennom deres symptomer.
+            Magasinet har sin hensikt å gi brukeren en opplevelse av symptomet,
+            mer enn å forklare hva symptomet er.
+          </p>
+          <p>
+            Designretningen skal derfor tilpasses de ulike symptomene og kan
+            presenteres gjennom ulike medier og interaktive løsninger. På denne
+            måten kan vil designet til hver artikkel kunne løses på ulike måter,
+            både design og interaktivitet. Det viktige er å tilpasse designet
+            til gjeldende symptom artikkel.
+          </p>
+        </section>
+      </article>
+      <article id="article2">
+        <h2>Visjon og verdier</h2>
+        <section>
+          <h3>Visjon</h3>
+          <p>
+            Vi ønsker å være et nyskapende og utfordrende tilskudd til psykisk
+            helse magasiner. Ved å gi en bredere interaktiv opplevelse og som
+            ikke legger vekt på faglitterært innhold, men i stedet prøver å
+            gjennskape symptomene gjennom sanser og følelser.
+          </p>
+        </section>
+        <section>
+          <h3>Verdier</h3>
+          <h4>Nyskapende</h4>
+          <p>
+            Vi ønsker å være nytenkende med en annerledes tilnærming til hvordan
+            man presenterer fagrelatert informasjon
+          </p>
+          <h4>Sårbar</h4>
+          <p>
+            Ved å spille på følelser og sanser ønsker vi å nå lengre inn i
+            brukeren og ikke være redde for å oppleves skjøre og sare. På denne
+            måten kan vi gi en menneskelig beskjeeling til magasinet.
+          </p>
+          <h4>Eksperimentelt</h4>
+          <p>
+            Vi ønsker å kunne prøve ut nye kombinasjoner av teknologi og design.
+            Teste ut interaksjoner og idéer som kanskje kan føles ukomfortable,
+            men interessante.
+          </p>
+          <h4>Edgy</h4>
+          <p>
+            Vi ønsker å skille oss ut ved å sette ting litt på spissen og følge
+            en utradisjonell informeringsstrategi. Noe som kan være
+            provoserende, men også troverdig.
+          </p>
+        </section>
+      </article>
+      <article id="article3">
+        <h2>Design oppsett</h2>
+        <section id="layout">
+          <h3>Layout</h3>
+          <p>
+            Tåke Magazine er ment for å være et nyskapende og eksperimentelt
+            magasin, der hver artikkel tilpasser seg symptomet fremfor å følge
+            et fast oppsett.
+          </p>
+          <h3>Landingsside</h3>
+          <p>
+            Landingssiden skal derimot beholde et likt oppsett med unntak av
+            Main containeren som i dette tilfelle inneholder bilder som
+            representerer symptomer. I et nytt nr kan dette ha et annet oppsett
+            som er passende til det temaet som gjelder. Det kan da være bilder,
+            tekst, eller andre typer medier.
+          </p>
+          <img
+            src="./img/grids_layout_landing.jpg"
+            alt="layout"
+            class="layoutImg"
+          />
+          <h3>Første underside</h3>
+          <p>
+            Fra landingssiden kommer man til en undermeny som også skal beholde
+            samme struktur gjennom de utlike utgavene. En horisontal sidescroll
+            som er satt opp med css grid der elementene er plassert ulikt på y
+            aksen.
+          </p>
+          <img
+            src="./img/schizotypal_underside.png"
+            alt="underside navigering"
+            class="underside"
+          />
+          <h3>Artikler</h3>
+          <p>
+            Hefra er designeren selv fri til å tilpasse layoutet til gitt
+            artikkel for å skape følelsen av symptomet. Det er mer ønskelig at
+            enhver artikkel skal være ulike fremfor like for å skape variasjon
+            og spenning. Så lenge bilder, fonter og farger overholder sine
+            retningslinjer vil man uansett klare å skape en kontinuitet og rød
+            tråd gjennom de ulike utgavene og artiklene.
+          </p>
+        </section>
+        <section id="breakpoints">
+          <h3>Breakpoints</h3>
+          <p>
+            Magasinet er ment for å oppleves på større skjerm. Det er alikevel
+            nødvendig at magasinet kan oppleves på mindre skjermer. Det er
+            derfor satt opp 2 breakpoints for å tilpasse seg flest skjermer.
+          </p>
+          <p>Tablets: 900px</p>
+          <p>Mobile: 600px</p>
+          <img
+            src="./img/schizotypal_underside_mobil.png"
+            alt="mobil eksempel"
+            class="mobil-eksempel"
+          />
+        </section>
+        <section id="navigation">
+          <h3>Navigasjon</h3>
+          <h3>Sidemeny navigasjon</h3>
+          <p>
+            Navigasjonen på landingssiden er en venstrestilt sidemeny. Her kan
+            man gå videre til de ulike under kategoriene/artiklene. Den
+            venstrestilte menyen følger ikke videre med fra landingssiden. Dette
+            er for at man må gå gjennom og frem og tilbake mellom sidene for å
+            underbygge at symptomene stadig er tilstedet og vanskelige å bli
+            kvitt. Det er også tenkt at artiklene kan endres med den klikkbare
+            navigeringen for å vise at symptomene ikke nødvendigvis er en
+            spesifikk følelse.
+          </p>
+          <img
+            src="./img/sidenav.png"
+            alt="side navigation"
+            class="sideNavImg"
+          />
+          <h3>Tilbake navigasjon</h3>
+          <p>
+            Det eneste kontinuerlige komponentet er tilbakeknappen Som viser seg
+            på de fleste sider utenom landingssiden. Det finnes noen unntak, men
+            det må da være grunnet symptomets/artikkelens fremstilling.
+          </p>
+          <img src="./img/backBtn.png" alt="back button" class="backBtn" />
+          <!-- </div> -->
+        </section>
+        <section id="reglement">
+          <h3>Innholds reglement</h3>
+          <p>
+            Det er lov til å bruke innhold som kan virke støtende for noen
+            mennesker. Det kan være f.eks. i form av vold eller pornografisk
+            opprinnelse, men det er ikke lov til å legge til innhold som kan
+            eller har kommet på bekostning av mennesker uten direkte tillatelse
+            fra menneske det skulle angå.
+          </p>
+          <p>
+            Alt innhold, og spesielt støtende innhold, skal ikke tilføyes
+            magasinet hvis ikke det har en tilknytning med begrunnelse til
+            artikkelen.
+          </p>
+        </section>
+      </article>
+      <article id="article4">
+        <h2>Design elementer</h2>
+        <section class="sub-section">
+          <section id="logo">
+            <h2>Logo</h2>
+            <p>
+              Logoen representerer magasinets konsept og idé. Ved å fjerne deler
+              av det typografiske snittet vil lesbarheten være uklar og uviss,
+              men er fremdeles mulig å tyde hvis man studerer og tolker den.
+            </p>
+            <div class="logo-display">
+              <img
+                src="img/taake_logo.png"
+                alt="logo"
+                class="logo-guidelines"
+              />
+            </div>
+          </section>
+          <section class="sub-section">
+            <h3>Logo størrelse</h3>
+            <p>
+              Størrelsen på logoen skal minimum være 16px i høyden på mobil og
+              minimum være 25px i høyden på desktop.
+            </p>
+            <div class="logo-display">
+              Mobile: 16px<img
+                src="img/taake_logo.png"
+                class="logo-str-mobile"
+              />
+            </div>
+            <div class="logo-display">
+              Desktop: 25px<img
+                src="img/taake_logo.png"
+                class="logo-str-desktop"
+              />
+            </div>
+          </section>
+          <section class="sub-section">
+            <h3>Logo med bakgrunn</h3>
+            <p>
+              På hvit bakgrunn skal den svarte logoen brukes.
+            </p>
+            <p>
+              På farget eller svart bakgrunn skal den hvite logoen brukes. Blir
+              den fargede bakgrunnen for lys slik at den hvite logoen nesten
+              ikke synes skal man bruke den svarte logoen.
+            </p>
+            <div class="logo-display">
+              <img
+                src="img/taake_logo_black_ramme.png"
+                class="logo-guidelines"
+              />
+              <img src="img/taake_logo_white.png" class="logo-guidelines" />
+            </div>
+          </section>
+          <section class="sub-section">
+            <h3>Logo spacing</h3>
+            <p>
+              Avstanden mellom logoen og andre elementer skal minimum være
+              halveparten av logoen sin brukte størrelse.
+            </p>
+            <div class="logo-display">
+              <img src="img/logo_spacing.png" class="logo-guidelines" />
+            </div>
+          </section>
+        </section>
+        <section id="colors">
+          <h2>Farger</h2>
+          <p>
+            Magasinets primærfarge er svart. Herfra står designeren fritt til å
+            velge farger som samsvarer best til tematikken og innholdet i
+            artikkelsiden. En hovedregel er at fargene skal være knæsje og
+            sterke for å poppe gjennom det ellers mørke temaet.
+          </p>
+          <div id="color-grid">
+            <div class="color-black"></div>
+            <p>
+              Hex: #0a0a0a
+              <br />
+              RGB: 10 10 10
+            </p>
+          </div>
+        </section>
+        <section id="typography">
+          <section class="sub-section">
+            <h2>Typography</h2>
+            <p>
+              Fontene som er vist er magasinets hovedfonter. Til de ulike
+              artikkelsidene er det alikevel lov at designeren kan
+              konstruere/velge en display font som samsvarer med artikkelens
+              innhold.
+            </p>
+          </section>
+          <section class="sub-section">
+            <h3>Heading og småtekst</h3>
+            <p>
+              Som heading og småtekst font er det <i>Josefin-slab</i> som
+              brukes.
+            </p>
+            <p class="typo-josefin-slab-thin">Josefin slab</p>
+            <p class="typo-josefin-slab">Josefin slab</p>
+            <p class="typo-josefin-slab-bold">Josefin slab</p>
+          </section>
+          <section class="sub-section">
+            <h3>Brødtekst</h3>
+            <p>
+              Der det er mer mengdetekst er det fonten <i>Josefin-sans</i> som
+              skal brukes.
+            </p>
+            <p class="typo-josefin-sans-thin">Josefin sans</p>
+            <p class="typo-josefin-sans">Josefin sans</p>
+            <p class="typo-josefin-sans-bold">Josefin sans</p>
+          </section>
+          <section>
+            <h3>Fonter i bruk</h3>
+          </section>
+        </section>
+        <section id="images">
+          <h2>Bilder</h2>
+          <section class="sub-section">
+            <p>
+              Bildebruken i magasinet skal få frem et diffust og uvisst uttrykk.
+              Bildemanéren skal vise et bilde som er vanskelig å tyde ved hjelp
+              av retningslinjene vist under.
+            </p>
+            <p>
+              Bildene som blir brukt i artikklene skal samvare med artikkelen
+              sitt innhold. Hvis ikke det er noe som ødelegger for tematikken
+              kan også bildemanéren som gjelder resten av siden også brukes her.
+            </p>
+          </section>
+          <section class="sub-section">
+            <h3>Bilderedigering</h3>
+            <p>
+              <b>Fase 1:</b> Bilde er kun bilde. Størrelse og dimensjoner kan
+              være fritt.
+            </p>
+            <p>
+              <b>Fase 2:</b> Bilde er duplisert og satt med en opacity på 30%.
+              Bilde er så flyttet noen px vekk fra sentrum.
+            </p>
+            <p><b>Fase 3:</b> Samme som fase 2, men opacity er satt til 20%.</p>
+            <p>
+              <b>Fase 4:</b> Et rektangel med samme størrelse som bilde legges
+              over med en farge og satt til 20-30% opacity.
+            </p>
+            <p>
+              <b>Fase 5:</b> Bildene merges og et noise filter på max 15% blir
+              satt på.
+            </p>
+          </section>
+          <section class="sub-section">
+            <div id="image-grid">
+              <img src="img/fase1.jpg" />
+              +
+              <img src="img/fase1.jpg" />
+              +
+              <img src="img/fase1.jpg" />
+              +
+              <div class="color-rectangel"></div>
+              +
+              <div class="noise-facts">Noise filter max 15%</div>
+              =
+              <img src="img/sistefase.jpg" />
+            </div>
+          </section>
+          <section class="sub-section">
+            <h3>Bildestørrelse</h3>
+            <p>
+              Med mindre bildet dekker 100vw, bør ikke bilde overskride 800px i
+              bredden.
+            </p>
+            <img src="img/t9_oob.jpg" class="img-max" />
+          </section>
+        </section>
+      </article>
+      <article id="article5">
+        <h2>Kodestil konvensjoner</h2>
+        <ul class="kode-konvesjoner">
+          <ul>
+            <h4>Mappestruktur</h4>
+            <li>
+              • Assets skal fordeles i mapper som har et tilhørende navn, f.eks.
+              img eller video.
+            </li>
+            <li>• CSS filer skal i en egen mappa som heter css.</li>
+          </ul>
+          <ul>
+            <h4>Kode struktur</h4>
+            <li>• Bruk an soft-touch to space indentering</li>
+            <li>• Bruk space etter kolon :</li>
+            <li>• Bruk space før og etter curly brackets {}</li>
+            <li>• Strukturer koden radvis</li>
+            <li>• Kommentarer skal bruke slash //</li>
+          </ul>
+        </ul>
+        <img src="./img/css-code.png" alt="css kodestil" class="css-kodestil" />
+        <img
+          src="./img/js-kodestil.png"
+          alt="javascript kodestil"
+          class="js-kodestil"
+        />
+      </article>
+      <article id="article6">
+        <h2>Feedback/Kontakt</h2>
+        <p>
+          Ved spørsmål om <i>Tåke magazine</i> eller styleguiden ta kontakt med:
+        </p>
+        <h4>Eivind Madsen Pham</h4>
+        <p>tlf: +47 908 96 870</p>
+        <p>email: eivindmpham@gmail.com</p>
+      </article>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

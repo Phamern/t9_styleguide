@@ -1,0 +1,321 @@
+@import url("https://use.typekit.net/hct4vcx.css");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Josefin-sans", apple-system, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+h1 {
+  font-weight: 600;
+  font-family: "Josefin-slab", serif;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Josefin-slab", serif;
+  font-weight: 600;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+p {
+  max-width: 80vw;
+  margin-bottom: 50px;
+}
+
+article::before,
+section::before {
+  content: "";
+  display: block;
+  height: 5px;
+}
+
+section {
+  margin-bottom: 20%;
+}
+section .sub-section {
+  margin-bottom: 50px;
+}
+
+nav,
+main {
+  min-height: 100vh;
+  padding: 40px;
+}
+
+nav {
+  width: 300px;
+  border-right: 1px solid #eee;
+  font-size: 14px;
+  position: fixed;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul ul {
+  padding-left: 15px;
+}
+nav ul li {
+  margin-bottom: 0.8em;
+  font-weight: 400;
+}
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.sublist li {
+  font-weight: 300;
+}
+
+#layout .layoutImg {
+  width: 80vw;
+  padding-right: 50px;
+}
+#layout .underside {
+  width: 50vw;
+}
+
+#breakpoints .mobil-eksempel {
+  height: 60vh;
+}
+
+.sideNavImg {
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+.backBtn {
+  width: 200px;
+}
+
+.logo {
+  height: 30px;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.logo-display {
+  width: 600px;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.logo-display img {
+  height: 100px;
+  width: auto;
+  display: block;
+  padding-left: 30px;
+}
+.logo-display .logo-str-mobile {
+  height: 16px;
+  width: auto;
+  display: block;
+  padding-left: 30px;
+  margin-bottom: 40px;
+}
+.logo-display .logo-str-desktop {
+  height: 25px;
+  width: auto;
+  display: block;
+  padding-left: 30px;
+  margin-bottom: 40px;
+}
+.logo-display .logo-guidelines {
+  display: block;
+  margin-bottom: 40px;
+}
+
+#colors #color-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-gap: 30px;
+}
+#colors .color-black {
+  width: 100px;
+  height: 100px;
+  background-color: #0a0a0a;
+}
+
+#images img {
+  width: 150px;
+}
+#images .img-max {
+  width: 800px;
+}
+#images #images img:nth-child(2) {
+  opacity: 0.3;
+}
+#images #image-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+}
+#images div img {
+  width: 150px;
+}
+#images div .color-rectangel {
+  width: 150px;
+  height: 187px;
+  background-color: #26009a;
+  opacity: 0.2;
+}
+#images div img:nth-child(2) {
+  opacity: 0.3;
+}
+#images div img:nth-child(3) {
+  opacity: 0.2;
+}
+#images div div:nth-child(5) {
+  font-family: "Josefin-slab", serif;
+}
+
+main {
+  margin-left: calc(300px + 5%);
+}
+
+header,
+article {
+  max-width: 550px;
+  line-height: 1.4em;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #eee;
+}
+
+#article1,
+#article6 {
+  height: 100vh;
+}
+
+#article6 {
+  margin-top: 150px;
+  border-top: 1px solid #eee;
+}
+
+.typo-josefin-slab-thin {
+  font-family: "Josefin-slab", serif;
+  font-size: 2rem;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.typo-josefin-slab {
+  font-family: "Josefin-slab", serif;
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.typo-josefin-slab-bold {
+  font-family: "Josefin-slab", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.typo-josefin-sans {
+  font-family: "Josefin-sans", apple-system, "Helvetica Neue", sans-serif;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.typo-josefin-sans-thin {
+  font-family: "Josefin-sans", apple-system, "Helvetica Neue", sans-serif;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.typo-josefin-sans-bold {
+  font-family: "Josefin-sans", apple-system, "Helvetica Neue", sans-serif;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+#article5 .kode-konvesjoner {
+  list-style: none;
+  padding-left: 0;
+  width: 800px;
+}
+#article5 .kode-konvesjoner ul {
+  list-style: none;
+  padding-left: 0;
+}
+#article5 .kode-konvesjoner ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+#article5 .css-kodestil {
+  width: 40vw;
+}
+#article5 .js-kodestil {
+  width: 40vw;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+
+  nav,
+main {
+    min-height: auto;
+    max-width: 100vw;
+  }
+
+  main {
+    margin-left: 0;
+  }
+
+  nav {
+    position: static;
+    border-bottom: 1px solid #eee;
+    border-right: none;
+  }
+
+  .logo-display img {
+    height: 70px;
+  }
+
+  #images img {
+    width: 150px;
+  }
+  #images .img-max {
+    width: 85vw;
+  }
+  #images #image-grid {
+    grid-gap: 15px;
+  }
+  #images div img {
+    width: 100px;
+  }
+  #images div .color-rectangel {
+    width: 100px;
+    height: 127px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
